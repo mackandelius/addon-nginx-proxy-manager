@@ -17,6 +17,9 @@ ports:
   80/tcp: 80
   81/tcp: 81
   443/tcp: 443
+  7359/udp: 7359
+  8096/tcp: 8096
+  8920/tcp: 8920
 map:
   - addon_config:rw
 backup_exclude:
