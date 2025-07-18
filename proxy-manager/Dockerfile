@@ -37,9 +37,9 @@ RUN \
         python3=3.12.11-r0 \
         yarn=1.22.22-r1 \
     \
-    && yarn global add modclean \
-    \
-    && curl -J -L -o /tmp/nginxproxymanager.tar.gz \
+    && yarn global add modclean
+    
+RUN curl -J -L -o /tmp/nginxproxymanager.tar.gz \
         "https://github.com/NginxProxyManager/nginx-proxy-manager/archive/${NGINX_PROXY_MANAGER_VERSION}.tar.gz" \
     && mkdir /app \
     && tar zxvf \
