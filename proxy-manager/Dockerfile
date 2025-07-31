@@ -20,9 +20,8 @@ RUN apk add --no-cache --virtual .build-dependencies \
         libffi-dev=3.4.8-r0 \
         openssl-dev=3.5.1-r0 \
         patch=2.8-r0 \
-        python3-dev=3.12.11-r0 
-        
-RUN apk add --no-cache \
+        python3-dev=3.12.11-r0 \
+    && apk add --no-cache \
         apache2-utils=2.4.63-r4 \
         certbot=4.0.0-r0 \
         libcap=2.76-r0 \
@@ -34,8 +33,8 @@ RUN apk add --no-cache \
         openssl=3.5.1-r0 \
         py3-pip=25.1.1-r0 \
         python3=3.12.11-r0 \
-        yarn=1.22.22-r1
-RUN yarn global add modclean \
+        yarn=1.22.22-r1 \
+    && yarn global add modclean \
     \
     && curl -J -L -o /tmp/nginxproxymanager.tar.gz \
         "https://github.com/NginxProxyManager/nginx-proxy-manager/archive/${NGINX_PROXY_MANAGER_VERSION}.tar.gz" \
