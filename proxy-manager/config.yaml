@@ -1,6 +1,6 @@
 ---
 name: Nginx Proxy Manager
-version: dev
+version: edge
 slug: nginxproxymanager
 description: Manage Nginx proxy hosts with a simple, powerful interface
 url: https://github.com/mackandelius/addon-nginx-proxy-manager
